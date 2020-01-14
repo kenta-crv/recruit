@@ -1,10 +1,10 @@
 class ContactMailer < ActionMailer::Base
-  default from: "info@k-speas.jp"
-  default to: "info@k-speas.jp"
+  default from: "info@ri-plus.jp"
+  default to: "info@ri-plus.jp"
 
   def received_email(contact)
     @contact = contact
-    mail(subject: 'K`s Consultingよりメッセージが届きました') do |format|
+    mail(subject: 'リクリードよりメッセージが届きました') do |format|
       format.text
     end
   end

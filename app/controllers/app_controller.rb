@@ -18,12 +18,12 @@ class AppController < ApplicationController
   def company
   end
 
-  def privacy
-  end
-
   def agent
   end
 
   def review
+  end
+
+  def recruit
   end
 end

@@ -27,7 +27,8 @@ class ContactController < ApplicationController
     :tel, #電話番号
     :address, #住所
     :email, #メールアドレス
-    :subject,
+    :industry,
+    :saraly,
     :message
     )
   end

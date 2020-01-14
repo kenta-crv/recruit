@@ -20,30 +20,7 @@
 body {
   width:100%;
   margin:0 auto;
-  text-align:center;
 }
-
-
-                                /*ヘッダーのベース設定*/
-header {
-  width: 100%;
-  background-color:white;
-  position: fixed;
-  z-index:10;
-  margin-top:-10px;
-     .left {
-       float:left;
-     }
-     .right {
-       float:right;
-     }
-}
-
-main {
-  margin-top:90px;
-}
-
-
 
                                   /*  メイン画像  */
 .back-image-app {
@@ -51,52 +28,36 @@ main {
   background-size: 100%;
   background-repeat: no-repeat;
   vertical-align: middle;
-  padding-bottom:50px;
-  margin-top:-10px;
+  margin-top:-62px;
   margin-right:-15px;
-}
-.back-image-it {
-  background-image: url('it.png');
-  background-size: 100%;
-  background-repeat: no-repeat;
-  vertical-align: middle;
-  margin-top:-17px;
-  padding-bottom:50px;
 }
 
 .back-image {
+    padding-left:50px;
+    color: #FFF;/*文字色*/
+    text-shadow: 3px 2px 3px black;
 
-    .box2 {
-     padding: 1vw 4.5vw 0.3vw;
-     display:inline-block;
-     background:$main_color;
-           p {
-           color: #FFF;/*文字色*/
-           font-weight: bold;
-           font-size:2.0vw;
-             }
-      }
       .face-1 {
           font-size:2.0vw;
           font-weight:bold;
           margin-top:40px;
       }
       .face-2 {
-          font-size:5.5vw;
+          margin-top:30px;
+          font-size:5.0vw;
           font-weight:bold;
       }
       .face-3 {
-          font-size:5.5vw;
+          font-size:5.0vw;
           font-weight:bold;
           color:red;
       }
       .face-price {
-          font-size:3.0vw;
+          font-size:2.5vw;
           font-weight:bold;
           color:red;
-          margin:-10px 0 -10px;
            strong{
-             font-size:8.5vw;
+             font-size:8.0vw;
              color:red;
            }
       }
@@ -105,11 +66,22 @@ main {
           font-weight:bold;
           color:red;
       }
+
  }
 
-.information {
-  margin-top:55px;
-}
+ .box2 {
+  padding: 1vw 4.5vw 0.3vw;
+  display:inline-block;
+  background:red;
+  margin-left:60px;
+
+  line-height:3vw;
+        p {
+        color: #FFF;/*文字色*/
+        font-weight: bold;
+        font-size:2.0vw;
+          }
+   }
 
     .box1 {
      padding: 1rem 4.5rem 0.3rem;
@@ -151,7 +123,7 @@ table.company {
    margin: 0 auto;
    border-collapse: separate;
    border-spacing: 0px 15px;
-   font-size: 2.0vw;
+   font-size: 1.5vw;
 
    th, td { padding: 10px; }
 
@@ -163,7 +135,7 @@ table.company {
       position: relative;
       color: #fff;
       font-weight: normal;
-      font-size: 2.2vw;
+      font-size: 1.7vw;
 
       :after {
          left: 100%;
@@ -186,6 +158,7 @@ table.company {
 
       }
 }
+
 
 /* firefox */
 @-moz-document url-prefix() {
@@ -244,8 +217,8 @@ table.company {
         }
         h6 {
             line-height:2.0em;
-            font-size:1.5vw;
-            margin:0 70px;
+            font-size:1.6rem;
+            margin:0 10px;
         }
 }
 
@@ -486,4 +459,39 @@ background-color:$sub_color;
  left: 0;
  right: 0;
 }
+}
+
+
+
+.red {
+  color: red;
+}
+
+.font-height {
+  line-height:3.0vw;
+  margin:0 30px;
+}
+
+.font-height-2 {
+  font-size:0.5vw;
+  margin:0 30px;
+}
+
+
+
+.btn-square {
+  display: inline-block;
+  padding: 0.5em 1em;
+  font-size: 40px;
+  text-decoration: none;
+  background: #004D7F;/*ボタン色*/
+  color: #FFF;
+  border-bottom: solid 4px #627295;
+  border-radius: 3px;
+}
+.btn-square:active {
+  /*ボタンを押したとき*/
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px);/*下に動く*/
+  border-bottom: none;/*線を消す*/
 }

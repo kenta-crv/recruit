@@ -1,4 +1,5 @@
 class PostsController < ApplicationController
+before_action :authenticate_admin!, except: [:index, :show]
   def index
     #@type = params[:type]
     @posts = Post.order(created_at: "DESC").page(params[:page])

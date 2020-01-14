@@ -1,133 +1,114 @@
-/#トップ
-br
-.back-image
+- set_meta_tags  title: '初期費用無料・成功報酬で応募数を大幅改善なら｜リクリード'
+- set_meta_tags  keyword: ''
+- set_meta_tags  description: ''
+
+.back-image.back-image-app
   .row
-    .col-sm-1
-    .col-sm-7.face-1
-        |  記帳代行なら記帳代行サポート
-        br
-          .face-2
-            |  業界最安値に挑戦!!
+      .col-xs-4
+          br
+          =image_tag "recread.png", width: "100%", class:"left"
+      .col-xs-4
+      .col-xs-4
+
+  .row
+    .col-xs-5.face-1
+        |  求人応募にお困りの企業様必見！
+        |  初期費用無料・成功報酬であなたの悩みを一気に解消するなら
+        .face-2
+            | 『リクリード』
             br
               .face-price
-                |  一律
+                |  成功報酬
                 strong
-                   | 9,500
+                   | 5,000
                 | 円~
-              .box2
+              .box2.hidden-xs
                 p
-                  | お問い合わせはコチラ
+                  | 応募率向上企業様続々！
               .face-price
-                | 平均削減率
+                |
                 strong
-                  | 63%!!
+                  |
+                  |
+                  |
 
-    .col-sm-4.visible-md.visible-lg
-        .box1
-          p
-            | 毎月20名様限定受付
-
-
-
-/# inquiry image
-.row
-  .col-sm-12.center
-    =link_to "/contact" do
-      =image_tag 'question1.png', width: '70%', class: 'center'
 
 br
+.row
+  .col-sm-12.center
+    =link_to "/contact", :target=>["_blank"]   do
+      =image_tag 'question.gif', width: '70%', class: 'center'
+
+
 br
 hr.line
 br
-br
 
-/# push font
-h2.push
-   span
-     | まずはご覧ください！
-     br
-     |  平均固定費削減率63%を達成しています！
+  /# push font
+  h2.push
+     span
+       | まずはご覧ください！リクリードが
+       br
+       | あなたの会社の人材難を解消します！
 
-br
-br
 
 /# Comparison
 table.company.center
-  col[width="25%"]
-  col[width="25%"]
-  col[width="25%"]
-  col[width="25%"]
+  col[width="15%"]
+  col[width="35%"]
+  col[width="15%"]
+  col[width="35%"]
   tbody
     tr
       th.arrow_box
+        | サポート実績
+      th.arrow_box
         |
-      th.arrow_box
-        | 依頼前
       th.arrow_box.price
-        | 当社切替
+        |
       th.arrow_box.price
-        | 削減率
+        |
     tr
       th.arrow_box
-        | A社（元は税理士契約）
-      td.h3
-        | 30,000円
+        | A社
       td.price
-        span
-           | 9,500円
+        | 応募数17倍へ上昇！
+      th.arrow_box
+        | B社
       td.price
-        span
-           | 68%
+        | 月間応募0→14件へ上昇
     tr
       th.arrow_box
-        | B社（記帳代行会社からの切替）
-      td.h3
-        | 12,000円
+        | C社
       td.price
-        span
-           | 9,500円
-      td.price
-        span
-           | 21%
-    tr
+        | 年間採用費320万円削減
       th.arrow_box
-        | C社（経理担当で月間10時間依頼）
-      td.h3
-        | 15,000円
+        | D社
       td.price
-        span
-           | 9,500円
-      td.price
-        span
-           | 37%
+        | 月間採用費80%へ削減
 
 
-br
 br
 hr.line
-br
 br
 
 /# push font
 h2.push
    span
-     | まだまだ実例があります！
+     | 独自の採用路線を確保する事で、
      br
-     |  徹底的な業務効率化で格安提供サービスを実現！
+     | 他社との応募競合を避けて一人勝ちしませんか？
 
-br
 br
 
 /# inquiry image
 .row
   .col-sm-12.center
-    =link_to "/contact" do
-      =image_tag 'question1.png', width: '70%', class: 'center'
+    =link_to "/contact", :target=>["_blank"]   do
+      =image_tag 'question.gif', width: '70%', class: 'center'
 
 br
-br
 hr.line
-br
 br
 
 /# Trouble
@@ -135,328 +116,477 @@ br
   h2.heading
     strong
       | こんなお悩み
-    | ありませんか？
+    | の企業様に最適です
   br
   br
   h6.heading
-    | 税務は会社の決算書や試算表、確定申告を行うための非常に重要な業務です。その反面、業務と直接の関連はなく、税理士に高いコストを払って放置しがちです。
+    | 採用に関しては人が集まりにくいこの時代、お悩みの企業様も多いのではないでしょうか？リクリードでは以下の悩みをお持ちの企業様を成果報酬にて徹底サポート致します。
   .row
     .col-sm-1
     br
     br
-    .col-sm-4.center
+    .col-sm-4.center.hidden-xs
       = image_tag "distress.jpg"
+    .col-sm-1
     br
-    br
-    br
-    .col-sm-7
+    .col-sm-6
        p
          strong
            | ☑︎
-         |  税理士に顧問を依頼しているが出来ればコストを削りたい
+         |  広告費に毎月投資しているのに応募がほとんど来ない
          br
          b.h4
          strong
            | ☑︎
-         |  記帳をスタッフに任せているが専門知識がなく合っているか不安
+         |  求人掲載しても派遣会社に負けてしまう
          br
          b.h4
          strong
            | ☑︎
-         |  記帳はなるべく安価かつ手軽に済ませたい
+         |  確証がない正社員求人に数十万払う価値が見出せない
          br
          b.h4
          strong
            | ☑︎
-         |  現在記帳代行会社に依頼しているがもっと安い会社に依頼したい
+         | かと言って人材紹介で数百万支払うのは高すぎる
+         br
+         b.h4
+         strong
+           | ☑︎
+         | 成果報酬で解決出来るなら是非ともお願いしたい
          b.h4
 
 br
-br
 hr.line
-br
 br
 
 /# push font
 h2.push
    span
-     | お任せ下さい！記帳代行サポートが
+     | お任せ下さい！独自戦略を貫くリクリードは
      br
-     |  業界最安値であなたの会社を徹底サポート
+     | 自信があるから成果報酬で人材難を解決します！
 
-br
 br
 
 /# inquiry image
 .row
   .col-sm-12.center
-    =link_to "/contact" do
-      =image_tag 'question1.png', width: '70%', class: 'center'
+    =link_to "/contact", :target=>["_blank"]   do
+      =image_tag 'question.gif', width: '70%', class: 'center'
 
-br
 br
 hr.line
 br
+
+/# Trouble
+.top-wrapper
+  h2.heading
+    strong
+      | 事前にご理解下さい
+  br
+  br
+  h6.heading
+    | リクリードは集客を徹底サポート致しますが、条件が著しく悪い求人条件、労働基準法違反案件は取り扱う事が出来ません。事前にご理解の程お願いします。
+  .row
+    .col-sm-1
+    br
+    br
+    .col-sm-4.center.hidden-xs
+      = image_tag "sorry.jpg",width:"250px"
+    br
+    .col-sm-7
+       p
+         strong
+           | ×
+         |  対象エリアで平均以下の給料や条件である
+         br
+         b.h4
+         strong
+           | ×
+         |  経験者のみや制限等、市場で探すのが根本的に難しい条件
+         br
+         b.h4
+         strong
+           | ×
+         |  最低賃金含む労働基準法に遵守していない
+         br
+         b.h4
+         strong
+           | ×
+         |  採用にあたりある程度条件を相談する事が出来ない
+
+
+br
+hr.line
 br
 
+/# inquiry image
+.row
+  .col-sm-12.center
+    =link_to "/contact", :target=>["_blank"]   do
+      =image_tag 'question.gif', width: '70%', class: 'center'
+
+br
+hr.line
+br
+
+/# push font
+h2.push
+   span
+     | どうやって応募を集めてくれるの？
+     br
+     | リクリードに依頼するメリットをご紹介！
+
+br
+hr.line
+br
 
 /# USP Point
 .top-wrapper
   h2.heading
-    |  記帳代行サポートをお申込み頂く
+    |  求人宣伝は
     strong
-      |  ３つのメリット
-.row
-  .col-sm-3
-    = image_tag 'point1.jpg'
-  .col-sm-7
-    h2.heading
-       strong.wide
-          | 業界最安値！
-       small.bold
-          | 他社と比較して見て下さい！
-    br
-    p
-      | 記帳代行サポートでは、お客様の月々のコストを最大迄下げるべく、徹底的に社内リソースを見直すことにより、業界最安値を実現致しました。また、お客様にもご協力頂くことで業務効率化も達成しております。
-  .col-sm-1
-    = image_tag "person5.jpg", height: '200px'
+      |  御社のためだけに行います
+  br
+  br
+  h6.heading
+    | 通常求人会社はサイト毎に広告を行うことが通常。しかしその結果はほとんどが高時給の派遣会社・高額な投資を行う大手企業に求人を取られてしまうのが現実。リクリードは御社だけのページを御社だけで宣伝するため徹底した競合排除を行います。
+  br
+  br
+  .row
+   .col-sm-3
+   .col-sm-6
+     = image_tag "onlyone.jpg", width:"100%"
+   .col-sm-3
+
+br
+hr.line
 br
 
-.row
-  .col-sm-3
-    = image_tag 'point2.jpg'
-  .col-sm-7
-    h2.heading
-       strong.wide
-          | 負担も最小限！
-       small.bold
-          | 毎月データを送付するだけ！
-    br
-    p
-      | 記帳代行サポートでは、ご契約頂いた後、毎月指定日迄にその月の記帳依頼するデータをお送り頂くのみ。記帳可能な内容かの判断は記帳代行サポートが全て判断して精査致します。
-  .col-sm-1
-    = image_tag "person1.jpg", height: '200px'
+/# USP Point
+.top-wrapper
+  h2.heading
+    |  応募無しなら実費のみの
+    strong
+      |  完全成果報酬モデル
+  br
+  br
+  h6.heading
+    | リクリードでかかる投資費用は、『宣伝に関する実費のみ』。自信があるからこそ、応募に対する成果報酬で承るため、万一応募がない場合の費用発生は御座いません。
+  br
+  br
+  .row
+   .col-sm-3
+   .col-sm-6
+     = image_tag "zero.jpg", width:"100%"
+   .col-sm-3
+
+br
+hr.line
 br
 
-.row
-  .col-sm-3
-    = image_tag 'point3.jpg'
-  .col-sm-7
-    h2.heading
-       strong.wide
-          | 今後の経営に役立てられる！
-       small.bold
-          | 試算表を送付！
-    br
-    p
-      | 記帳代行サポートでは、毎月送付頂いた情報を元にして試算表を送付しております。毎月の試算表を見ることで、進行状況の見える化だけでなく、経費の使い過ぎを把握出来るため、経営に活かすことが出来ます。
-  .col-sm-1
-    = image_tag "person3.jpg", height: '200px'
+/# USP Point
+.top-wrapper
+  h2.heading
+    |  単価30万円以上のランディングページを
+    strong
+      |  無料作成
+  br
+  br
+  h6.heading
+    | リクリードでは、企業広告に使われるようなランディングページを無料で作成致します。通常作成すると最低でも30万円以上かかるものを自信があるから無料で作成します。もちろんSEO対策やレスポンシブデザインは完備です！
+  br
+  br
+  .row
+   .col-sm-3
+   .col-sm-6
+     = image_tag "lp.jpg", width:"100%"
+   .col-sm-3
+
 br
+hr.line
 br
+
+/# USP Point
+.top-wrapper
+  h2.heading
+    |  安心の
+    strong
+      |  完全後払い方式
+  br
+  br
+  h6.heading
+    | リクリードは費用は宣伝実費、成果報酬は全て後払いを採用しています。先行して費用は発生しないため安心して取引頂けます。（※万一審査に通過しない場合、保証金を頂く場合がございます。）
+  br
+  .row
+   .col-sm-3
+   .col-sm-6
+     = image_tag "paid-img.png", width:"100%"
+   .col-sm-3
+
+
+br
+hr.line
+br
+
+.top-wrapper
+  h2.heading
+    | 費用対効果が
+    strong
+      |  とにかく安い！
+  br
+  br
+  h6.heading
+    | 成果報酬自体が1件最低5,000円〜と低価格のため、求人会社と比較しても圧倒的に一件あたりの応募費用が安い傾向にあります。（※業種やエリアによって単価は変動します。詳しくはお問い合わせ下さい）
+  br
+  br
+  .row
+   .col-sm-3
+   .col-sm-6
+     = image_tag "cost.jpg", width:"100%"
+   .col-sm-3
+
+br
+hr.line
+br
+
+.top-wrapper
+  h2.heading
+    strong
+      | マーケティングのプロ
+    | だから出来る独自の求人形式
+  br
+  br
+  h6.heading
+    | 他社でも例を見ない独自採用方式の確立は弊社が代表がマーケティングスキルに特化しているから。御社の採用の差別化を徹底サポートします。
+  br
+  br
+  .row
+   .col-sm-3
+   .col-sm-6
+     = image_tag "usp1.jpg", width:"100%"
+   .col-sm-3
+
+br
+hr.line
+br
+
 
 /# inquiry image
 .row
   .col-sm-12.center
-    =link_to "/contact" do
-      =image_tag 'question1.png', width: '70%', class: 'center'
+    =link_to "/contact", :target=>["_blank"]   do
+      =image_tag 'question.gif', width: '70%', class: 'center'
 
 br
-br
 hr.line
-br
 br
 
 /# price information
 .top-wrapper
   h2.heading
     strong
-      | 記帳代行サポート料金
+      | リクリードの料金
     | のご案内
+  br
+  br
+  h6.heading
+    | リクリードをお申し込み頂くにあたり当社に頂く費用をご案内しております。初期費用や月額費用は基本的に頂かない、分かりやすい料金体系となっております。
+
 table.company.center
-  col[width="40%"]
-  col[width="60%"]
+  col[width="20%"]
+  col[width="30%"]
+  tbody
+    tr
+      th.arrow_box.price colspan="4"
+        | 料金
+    tr
+      th.arrow_box
+        | 初期費用
+      td
+        span.price
+           |  0円
+      th.arrow_box
+        | 月額費用
+      td.price
+        span
+           | 0円
+    tr
+      th.arrow_box
+        | 契約期間
+      td.price
+        span
+           | 6ヶ月〜
+      th.arrow_box
+        | 最低応募件数
+      td.price
+        span
+           | 月20件〜
+    tr
+      th.arrow_box
+        | LPサイト構成費
+      td
+        span.price
+           | 0円
+      th.arrow_box
+        | 宣伝オプション
+      td.price
+        span
+           | 実費
+    tr
+      th.arrow_box
+        | 成功報酬費用
+      td.price colspan="3"
+        span
+           | 1応募あたり5,000円〜（お見積もりはお問い合わせ下さい）
+
+.center
+  small
+    | ※1 基本的な費用を明記しております。成功報酬費用は難易度により費用は異なります。
+    | ※2 ご依頼頂く件数等により金額は変動する場合があります。
+
+br
+
+/# inquiry image
+.row
+  .col-sm-12.center
+    =link_to "/contact", :target=>["_blank"]   do
+      =image_tag 'question.gif', width: '50%', class: 'center'
+
+br
+hr.line
+br
+
+
+/#
+.top-wrapper
+  h2.heading
+    | 求人会社との
+    strong
+      | 比較
+  br
+  br
+  h6.heading
+    | リクリードにお申し込み頂くにあたり、求人会社様との比較表をご用意しました。
+
+table.company.center
+  col[width="20%"]
   tbody
     tr
       th.arrow_box
         |
-      th.arrow_box.price
-        | 詳細
+      th.arrow_box
+        | 某正社員求人会社
+      th.arrow_box
+        | 某アルバイト求人会社
+      th.arrow_box
+        |　人材紹介会社
+      th.arrow_box
+        |　リクリード
     tr
       th.arrow_box
-        | 基本料金
+        | 固定コスト
+      td
+        | 350,000円
+      td
+        | 140,000円
+      td
+        | 0円
       td.price
         span
-           | 9,500円（税抜）
+         | ０円
     tr
       th.arrow_box
-        | 記帳枚数（150枚以上、150枚追加毎に）
+        | 成功報酬
+      td
+        | 0円
+      td
+        | 0円
+      td
+        | 1,500,000円
+        br
+        | (紹介料20%~30%)
       td.price
         span
-           | +2,000円ずつ
-.center
-  small
-    | ※1 毎月指定日迄に送付頂けない場合、別途1,000円を頂戴しております。
-    | ※2 MFクラウド・Freee以外のソフトで入力する場合、別途2,000円〜が発生します。
-    br
-    | ※3 領収書の送付はデータのみ受け付けしております。送付方法により別途2,000円〜が発生します
-    | ※4 弊社は事務作業についてはメール対応のみとなっております。お電話対応は別途1,500円〜となります。
+         | 5,000円
+        br
+        small
+           | (1件応募あたり)
+    tr
+      th.arrow_box
+        | 応募無しの場合
+      td
+        | 350,000円
+      td
+        | 140,000円
+      td
+        | -
+      td.price
+        span
+         | ０円
 
-br
-br
-hr.line
-br
-br
-
-/# Flow
-.top-wrapper
-  h2.heading
-    strong
-      |  簡単３STEP！！
-    | お申し込み〜月々の実施内容
-.row
-  .col-sm-3
-    = image_tag 'point1.jpg'
-  .col-sm-7
-    h2.heading
-      strong
-        | お申し込みフォーム企業情報を送信
-    br
-    p
-      | お申し込み頂く場合、下記お申し込みフォームより情報をご入力下さい。その際、後のトラブルを防ぐため、必ず約款に目を通して頂くよう、ご協力よろしくお願い致します。
-  .col-sm-1
-    = image_tag "person1.jpg", height: '200px'
-br
-
-.row
-  .col-sm-3
-    = image_tag 'point2.jpg'
-  .col-sm-7
-    h2.heading
-      strong
-        | サイト情報の共有
-    br
-    p
-      | 貴社のお持ちの記帳サイトアカウントに弊社を招待頂きます。内容について詳細サポートが必要な場合、別途費用が発生する場合があります。
-  .col-sm-1
-    = image_tag "person3.jpg", height: '200px'
-br
-
-.row
-  .col-sm-3
-    = image_tag 'point3.jpg'
-  .col-sm-7
-    h2.heading
-      strong
-        | 毎月指定日迄にデータ送付
-    br
-    p
-      | データアップロード画面から毎月指定日迄にデータファイルをアップロード頂きます。
-  .col-sm-1
-    = image_tag "person8.jpg", height: '200px'
-
-br
-br
-
-/# font image
-h2.push
-   span
-     | 最初の初期設定もわずか10分程度！
-     br
-     | 毎月ファイルをまとめてアップロードするだけ！
-
-br
 br
 
 /# inquiry image
 .row
   .col-sm-12.center
-    =link_to "/contact" do
-      =image_tag 'question1.png', width: '70%', class: 'center'
+    =link_to "/contact", :target=>["_blank"]   do
+      =image_tag 'question.gif', width: '50%', class: 'center'
 
-br
 br
 hr.line
 br
-br
 
 
-/# Limited
 .top-wrapper
   h2.heading
     strong
-      |  20社限定プレゼント！！
-    br
-    br
-    strong
-      | コンサルタントが絶対教えたくない３大特典！
-.row
-  .col-sm-3
-    = image_tag 'point1.jpg'
-  .col-sm-7
-    h2.heading
-       strong.wide
-          | 利益最大化！
-       small.bold
-          | 絶対に役立つ節税対策集！
-    br
-    p
-      | 当社はもともと経営コンサルティング会社として運営しており、利益の最大化を達成するために様々な節税対策を施工して来ました。利益を最大化出来るノウハウを惜しげも無くお伝え致します
-  .col-sm-1
-    = image_tag "person4.jpg", height: '200px'
-br
+      | リクリードのお申し込み
+    | の流れ
+  br
+  br
+  h6.heading
+    | お申し込みを頂く場合の流れをご案内しております。基本的には４STEPで完了する形となり、継続的にご依頼頂く場合については基本的に行なって頂く業務はありません。
 
 .row
-  .col-sm-3
-    = image_tag 'point2.jpg'
-  .col-sm-7
-    h2.heading
-       strong.wide
-          | 決算書を読める？
-       small.bold
-          | 経営に役立つ決算書の早見術！
-    br
-    p
-      | 決算書や確定申告書、、、数字が並びすぎて暗号のように見えてしまう方も多いのではないでしょうか？決算書をポイントを知って見ることで、お金の使い方も変えることが出来ます。
-  .col-sm-1
-    = image_tag "person1.jpg", height: '200px'
-br
-
+ .col-md-6
+   .kokuban-t3
+    span.title-t3> ❶求人条件のヒアリング
+    | 求人条件を弊社担当者よりヒアリングさせて頂きます。ヒアリングを元に適正単価を抽出し、貴社への見積もりを算出します。
+ .col-md-6
+   .kokuban-t3
+    span.title-t3> ❷契約締結
+    | 内容に同意頂ける場合、契約締結・後払い審査をかけさせて頂きます。後払い審査に通過しない場合、先払いにて対応頂きます。
 .row
-  .col-sm-3
-    = image_tag 'point3.jpg'
-  .col-sm-7
-    h2.heading
-       strong.wide
-          | 大好評につきお試し継続！
-       small.bold
-          | １ヶ月分無料トライアル実施中
-    br
-    p
-      | 契約するかどうか悩んでいるけど、イマイチ決め手に欠ける。そんな時はまず１ヶ月無料で記帳サポートを承っております。自信があるからこそ、結果を見てご判断下さい！
-  .col-sm-1
-    = image_tag "person1.jpg", height: '200px'
+ .col-md-6
+   .kokuban-t3
+    span.title-t3> ❸求人ページの作成
+    | 約７〜１０営業日程で貴社の求人専用ページを作成致します。全て作成が完了した段階で広告を開始し、求人開始となります。
+ .col-md-6
+   .kokuban-t3
+    span.title-t3> ❹毎月月末迄に応募数をお支払い
+    | 毎月月末に応募数を締めさせて頂き、件数に応じた請求書を発行させて頂きます。請求は後払いシステムに準じての発行となります。
+
 
 br
+hr.line
 br
+
 
 /# push font
 h2.push
    span
-     | 大変申し訳ありません。経費を最小化する観点より、
+     | 現在お申込みが殺到しているため、
      br
-     | 毎月20社様限定でのお申込みとさせて頂いております。
+     | まずはメールお問い合わせ下さい。
+
 
 br
-br
 
-/# inquiry image
+
+br
 .row
   .col-sm-12.center
-    =link_to "/contact" do
-      =image_tag 'question1.png', width: '70%', class: 'center'
-
-br
-br
-br
-br
+    =link_to "/contact", :target=>["_blank"]   do
+      =image_tag 'question.gif', width: '70%', class: 'center'

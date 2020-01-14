@@ -54,15 +54,20 @@ br
           = @contact.address
       tr
         th.arrow_box
-          | 住所
-          strong.label.label-blue 必須
+          | 業種
         td
-          = f.hidden_field :subject
-          = @contact.subject
+          = f.hidden_field :industry
+          = @contact.industry
       tr
         th.arrow_box
-          | 本文
-          strong.label.label-blue 必須
+          | 給与
+          small （時給/日給/月給いずれか入力）
+        td
+          = f.hidden_field :saraly
+          = @contact.saraly
+      tr
+        th.arrow_box
+          | 備考
         td
           = f.hidden_field :message
           = @contact.message

@@ -79,3 +79,5 @@ gem 'bootstrap-will_paginate'
 
 #画像アップロード
 gem 'carrierwave'
+#ログイン
+gem 'devise'
