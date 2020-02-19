@@ -177,13 +177,20 @@ table.company {
        margin-top: -10px;
        }
 }
-  input {
-    width:90%;
-  }
-  textarea {
-    width:90%;
-    line-height: 1.5em;
-  }
+input {
+  width:90%;
+  border-radius:3px;
+  box-shadow: none;
+  padding: 2px 8px;
+}
+textarea {
+  width:90%;
+  line-height: 1.5em;
+  border-radius:3px;
+  box-shadow: none;
+  padding: 2px 8px;
+}
+
 
 
 .price {
@@ -494,4 +501,27 @@ background-color:$sub_color;
   -webkit-transform: translateY(4px);
   transform: translateY(4px);/*下に動く*/
   border-bottom: none;/*線を消す*/
+}
+
+
+.red {
+  color: red;
+}
+
+.font-height {
+  line-height:3.0vw;
+  margin:0 30px;
+}
+
+.font-height-2 {
+  font-size:0.5vw;
+  margin:0 30px;
+}
+
+.label {
+  background: red;
+}
+
+.label-blue {
+  background: blue;
 }

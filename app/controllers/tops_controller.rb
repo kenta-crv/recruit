@@ -24,5 +24,6 @@ class TopsController < ApplicationController
   end
 
   def review
+    layout: "reserve"
   end
 end

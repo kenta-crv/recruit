@@ -1,13 +1,15 @@
 リクリードからお問い合わせがありました。
 
---------------------------
-会社名: <%= @contact.company %>
-お名前: <%= @contact.name %>
-電話番号: <%= @contact.tel %>
-メールアドレス: <%= @contact.email %>
-住所: <%= @contact.address %>
-業種: <%= @contact.industry %>
-給料: <%= @contact.saraly %>
-本文:
-	<%= @contact.message %>
---------------------------
+会社名:<%= @contact.company%>
+担当者名: <%= @contact.name%>
+電話番号: <%= @contact.tel%>
+メールアドレス: <%= @contact.email%>
+住所: <%= @contact.address%>
+掲載希望時期: <%= @contact.period%>
+採用希望者数: <%= @contact.people%>人
+給料区分: <%= @contact.saraly_select%><%= @contact.saraly%>円
+交通費: <%= @contact.transportation%>円
+就業時間: <%= @contact.working%>
+必要資格: <%= @contact.qualification%>
+残業: <%= @contact.overtime%>時間
+追記事項: <%= @contact.remarks%>
